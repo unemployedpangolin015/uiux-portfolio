@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg p-4">
+    <a class="navbar-brand" href="#">
+      <h1><strong>UI/UX Portolio</strong></h1>
+    </a>
+  </nav>
+  <div class="container py-2 px-4">
+    <h2 class="pb-4"><strong>Designing and Implementing a Responsive Webpage for Cheng Du Taste</strong></h2>
+    <div class="container py-4 px-0">
+      <div class="row">
+        <div class="col-md pr-5">
+          <h3 class="pb-2">Background</h3>
+          <p>
+            Cheng Du Taste is a Sichuanese restaurant in Providence, Rhode Island. Customers can order from the
+            restaurant on the website, or
+            they can order by phone or third-party food delivery apps.
+          </p>
+          <p class="pb-3">
+            I chose to redesign Cheng Du Taste's website because I found it hard to
+            use last year, and ended up ordering from the restaurant using Uber Eats rather than the restaurant's
+            website. I wanted to improve the
+            design so that potential customers have a better experience using the site.
+          </p>
+          <p class="pb-3">
+            The link to Cheng Du Taste's website can be found <a href="https://chengdutasteonline.com/">here</a>.
+          </p>
+        </div>
+        <div class="col-sm pl-5">
+          <img src="original_chengdu.PNG" class="img-fluid" alt="Responsive image" />
+        </div>
+      </div>
+    </div>
+    <h3 class="pb-2">Objective</h3>
+    <p>
+      My aim was to:
+    <ul>
+      <li>Analyze and identify flaws in the Cheng Du Taste website</li>
+      <li>Create low-fidelity and high-fidelity prototypes for a variety of screen sizes</li>
+      <li>Build a responsive website based on the prototypes</li>
+    </ul>
+    </p>
+    <h3 class="py-2">Identifying Usability Problems</h3>
+    <h4 class="pb-2">Usability</h4>
+    <p>I found many usability problems on the home page: </p>
+    <ul>
+      <li>There is no feedback when pressing buttons</li>
+      <li>I often expect the button to close a modal to be on the top, but it is on the bottom</li>
+      <li>On the mobile site, the modal covers the order online button, which can be annoying</li>
+      <li>It's hard to read the modal since it's not completely opaque against the background, and has white text on a
+        red background</li>
+      <li>The map doesn't show where the restaurant is, since there is no pin for the location</li>
+      <li>When you hover over some of the photos, the label just says "Photo"</li>
+      <li>Having three separate pages is unnecessary; the content on the gallery and directions page is already on the
+        home page</li>
+    </ul>
+    <h4 class="pb-2">Accessibility</h4>
+    <p>I used WebAIM WAVE to detect potential accessibility problems on the current website. These were the
+      accessibility problems that it found:</p>
+    <ul>
+      <li>The website has very little alt text for images, even though the site itself has a lot of image content</li>
+      <li>There is very low contrast between the text and background</li>
+    </ul>
+    <p>Generally, I agreed with the problems detected. Alternative text and sufficient contrast are very important
+      to make websites accessible, especially for viewers who may use screen readers and/or have limited eyesight.
+    </p>
+    <h3 class="py-2">Visual Redesign</h3>
+    <h4 class="pb-2">Low Fidelity Prototypes</h4>
+    <p>I used Balsamiq to create 3 wireframes for each type screen size (mobile, tablet, and desktop). For the
+      low-fidelity prototypes, I wanted
+      to focus on the usability problems that I found. The major changes that I made were:
+    </p>
+    <ul>
+      <li><strong>Making website to be a single page website rather than multi page.</strong> This optimizes the
+        experience for mobile users who are used to scrolling, and minimizes repeated information.</li>
+      <li><strong>Making the navbar fixed at the top, where selecting the link scrolls to the corresponding page
+          position.</strong> This allows users, especially those on a laptop, to navigate the page smoothly.</li>
+      <li><strong>Adding labels to the images in the image gallery.</strong> This allows users to learn what dish each
+        image shows.</li>
+      <li><strong>Putting the important information, like the phone number and address on the splash page.</strong>
+        Users should not have to scroll to find important information.</li>
+      <li><strong>Fixing the embedded map to show the restaurant location correctly.</strong></li>
+    </ul>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <img class="img-fluid" alt="responsive low fidelity prototype" src="responsive_lofi.png" />
+        </div>
+      </div>
+    </div>
+    <h4 class="pb-2">Style Guide</h4>
+    <p>I created a visual design style guide to show the colors, typography, and reusable component states.</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <img class="img-fluid" alt="responsive style guide" src="responsive_style_guide.PNG" />
+        </div>
+      </div>
+    </div>
+    <h4 class="pb-2">High Fidelity Prototypes</h4>
+    <p>Next, I created high fidelity prototypes for each screen size. The flexbox, padding, margins, and components like
+      buttons and the navbar were mostly
+      configured using Bootstrap classes. The documentation for Bootstrap can be found <a
+        href="https://getbootstrap.com/docs/5.2/getting-started/introduction/">here</a>.
+    </p>
+    <div class="container pb-2">
+      <div class="row">
+        <div class="col-sm-6 col-lg-6 pb-2">
+          <h5 class="text-center fw-bold pt-4">Web</h5>
+          <img class="img-fluid" src="responsive_web.png" />
+        </div>
+        <div class="col-sm-6 col-lg-4 pb-2 fw-bold">
+          <h5 class="text-center fw-bold pt-4">Tablet</h5>
+          <img class="img-fluid" src="responsive_tablet.png" />
+        </div>
+        <div class="col-sm-6 col-lg-2 pb-2 fw-bold">
+          <h5 class="text-center fw-bold pt-4">Phone</h5>
+          <img class="img-fluid" src="responsive_mobile.png" />
+        </div>
+      </div>
+    </div>
+    <h3 class="py-2">Responsive Redesign</h3>
+    <p>Finally, I created the page using HTML and CSS. The website follows the high fidelity prototypes to ensure that
+      the website is usable and accessible. All images have alt text, and the navbar has aria labels. </p>
+    <p>The URL to the page is <a
+        href="https://unemployedpangolin015.github.io/responsive-redesign/">https://unemployedpangolin015.github.io/responsive-redesign/</a>.
+      The page has also been embedded below:</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 bg-primary p-1">
+          <div class="ratio ratio-1x1">
+            <a href="https://unemployedpangolin015.github.io/responsive-redesign/"
+              class="text-white bg-dark p-2">Embedded page didn't load :'(. Click this link to view the page instead:
+              https://unemployedpangolin015.github.io/responsive-redesign/</a>
+            <iframe src="https://unemployedpangolin015.github.io/responsive-redesign/" width="200" height="200" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
