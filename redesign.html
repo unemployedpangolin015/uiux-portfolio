@@ -29,7 +29,7 @@
     <div class="container py-4 px-0">
       <div class="row">
         <div class="col-md pr-5">
-          <h3 class="pb-2">Background</h3>
+          <h3 class="pb-2 text-primary fw-bold">Background</h3>
           <p>
             Cheng Du Taste is a Sichuanese restaurant in Providence, Rhode Island. Customers can order from the
             restaurant on the website, or
@@ -50,40 +50,40 @@
         </div>
       </div>
     </div>
-    <h3 class="pb-2">Objective</h3>
+    <h3 class="pb-2 text-primary fw-bold">Objective</h3>
     <p>
       My aim was to:
     <ul>
-      <li>Analyze and identify flaws in the Cheng Du Taste website</li>
-      <li>Create low-fidelity and high-fidelity prototypes for a variety of screen sizes</li>
-      <li>Build a responsive website based on the prototypes</li>
+      <li><strong>Analyze and identify flaws</strong> in the Cheng Du Taste website</li>
+      <li>Create <strong>low-fidelity</strong> and <strong>high-fidelity</strong> prototypes for a variety of screen sizes</li>
+      <li>Build a <strong>responsive website</strong> based on the prototypes</li>
     </ul>
     </p>
-    <h3 class="py-2">Identifying Usability Problems</h3>
+    <h3 class="py-2 text-primary fw-bold">Identifying Usability Problems</h3>
     <h4 class="pb-2">Usability</h4>
     <p>I found many usability problems on the home page: </p>
     <ul>
-      <li>There is no feedback when pressing buttons</li>
-      <li>I often expect the button to close a modal to be on the top, but it is on the bottom</li>
-      <li>On the mobile site, the modal covers the order online button, which can be annoying</li>
-      <li>It's hard to read the modal since it's not completely opaque against the background, and has white text on a
+      <li>There is <strong>no feedback</strong> when pressing buttons</li>
+      <li>I often expect the button to close a popup to be on the top, but it is on the bottom</li>
+      <li>On the mobile site, the popup covers the order online button, which can be confusing for the user</li>
+      <li>It's <strong>hard to read the popup</strong> since it's not completely opaque against the background, and has white text on a
         red background</li>
-      <li>The map doesn't show where the restaurant is, since there is no pin for the location</li>
-      <li>When you hover over some of the photos, the label just says "Photo"</li>
-      <li>Having three separate pages is unnecessary; the content on the gallery and directions page is already on the
+      <li><strong>The map doesn't show where the restaurant is</strong>, since there is no pin for the location</li>
+      <li>When you hover over some of the photos, the label just says "Photo" and <strong>does not have a specific image description</strong></li>
+      <li><strong>Having three separate pages is unnecessary</strong>; the content on the gallery and directions page is already on the
         home page</li>
     </ul>
     <h4 class="pb-2">Accessibility</h4>
     <p>I used WebAIM WAVE to detect potential accessibility problems on the current website. These were the
       accessibility problems that it found:</p>
     <ul>
-      <li>The website has very little alt text for images, even though the site itself has a lot of image content</li>
-      <li>There is very low contrast between the text and background</li>
+      <li>The website has <strong>very little alt text</strong> for images, even though the site itself has a lot of image content</li>
+      <li>There is <strong>very low contrast</strong> between the text and background</li>
     </ul>
     <p>Generally, I agreed with the problems detected. Alternative text and sufficient contrast are very important
       to make websites accessible, especially for viewers who may use screen readers and/or have limited eyesight.
     </p>
-    <h3 class="py-2">Visual Redesign</h3>
+    <h3 class="py-2 text-primary fw-bold">Visual Redesign</h3>
     <h4 class="pb-2">Low Fidelity Prototypes</h4>
     <p>I used Balsamiq to create 3 wireframes for each type screen size (mobile, tablet, and desktop). For the
       low-fidelity prototypes, I wanted
@@ -98,8 +98,10 @@
         image shows.</li>
       <li><strong>Putting the important information, like the phone number and address on the splash page.</strong>
         Users should not have to scroll to find important information.</li>
+      <li><strong>Removing the popup from the website.</strong> The modal was more confusing and helpful, and putting the important information in the home page made more sense.</li>
       <li><strong>Fixing the embedded map to show the restaurant location correctly.</strong></li>
     </ul>
+    <p>Other usability/accessibility issues, such as button feedback, labels, alt text, and aria labels were focused on in the high-fidelity prototypes.</p>
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -124,7 +126,7 @@
     </p>
     <div class="container pb-2">
       <div class="row">
-        <div class="col-sm-6 col-lg-6 pb-2">
+        <div class="col-sm-6 col-lg-6 pb-2 image-container">
           <h5 class="text-center fw-bold pt-4">Web</h5>
           <img class="img-fluid" src="responsive_web.png" />
         </div>
@@ -138,24 +140,19 @@
         </div>
       </div>
     </div>
-    <h3 class="py-2">Responsive Redesign</h3>
+    <h3 class="py-2 text-primary fw-bold">Responsive Redesign</h3>
     <p>Finally, I created the page using HTML and CSS. The website follows the high fidelity prototypes to ensure that
-      the website is usable and accessible. All images have alt text, and the navbar has aria labels. </p>
+      the website is usable and accessible. In addition to the changes made in the low fidelity prototype, all images have <strong>alt text</strong>, and the navbar has <strong>aria labels</strong>. 
+      Additionally, to line up more with the physics aspect of a user's conceptual model, I added <strong>smooth scrolling</strong> to the navbar.</p>
     <p>The URL to the page is <a
         href="https://unemployedpangolin015.github.io/responsive-redesign/">https://unemployedpangolin015.github.io/responsive-redesign/</a></p>
-    <p>For viewers using tablets or desktops, the website is embedded below for ease of viewing.</p>
-    <div class="container d-none d-md-block">
-      <div class="row">
-        <div class="col-md-8 bg-primary p-1">
-          <div class="ratio ratio-1x1">
-            <a href="https://unemployedpangolin015.github.io/responsive-redesign/"
-              class="text-white bg-dark p-2">Embedded page didn't load :'(. Click this link to view the page instead:
-              https://unemployedpangolin015.github.io/responsive-redesign/</a>
-            <iframe src="https://unemployedpangolin015.github.io/responsive-redesign/" width="200" height="200" />
-          </div>
-        </div>
-      </div>
-    </div>
+    <h3 class="py-2 text-primary fw-bold">Conclusion</h3>
+    <p>I had three major learnings from redesigning the Cheng Du Taste website.</p>
+    <ol>
+      <li><strong>Simplicity in both layout and font</strong> is very important for helping users navigate a website.</li>
+      <li>CSS libraries like <strong>Bootstrap</strong> allow for <strong>faster iteration</strong>.</li>
+      <li><strong>Formalizing the style</strong> before creating high fidelity prototypes allows for better consideration of <strong>how component state should change to help the user</strong>.</li>
+    </ol>
   </div>
 
 
